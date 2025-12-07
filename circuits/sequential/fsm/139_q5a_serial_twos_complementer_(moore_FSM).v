@@ -17,7 +17,7 @@ module top_module (
     
     // Combinational logic: Decide next state
     always_comb begin
-        next_state = Q0;
+        next_state = state;
         z = 1'b0;
         case (state)
             Q0: begin
